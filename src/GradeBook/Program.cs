@@ -1,13 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            String arg = args?.Length > 0 ? args?[0] : "Abner";  
-            Console.WriteLine($"Hello, {arg}! Nice to meet you");
-        }
+      var book = new Book("Abner's Grade Book");
+      book.AddGrade(2.5);
+      book.AddGrade(6.8);
+      book.AddGrade(3.9);
+      book.AddGrade(4.1);
+      book.ShowStatistics();
     }
+  }
 }
