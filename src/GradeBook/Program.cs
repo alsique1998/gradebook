@@ -12,7 +12,10 @@ namespace GradeBook
       book.AddGrade(6.8);
       book.AddGrade(3.9);
       book.AddGrade(4.1);
-      book.ShowStatistics();
+      var stats = book.GetStatistics();
+      System.Console.WriteLine($"The lowest grade is {stats.Low}");
+      System.Console.WriteLine($"The highest grade is {stats.High}");
+      System.Console.WriteLine($"The average grade is {stats.Average}");
     }
   }
 }
