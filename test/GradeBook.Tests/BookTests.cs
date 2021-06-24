@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 
 namespace GradeBook.Tests
@@ -21,6 +20,7 @@ namespace GradeBook.Tests
       Assert.Equal(22.5, result.Low, 1);
       Assert.Equal(56.2, result.High, 1);
       Assert.Equal(44.5, result.Average, 1);
+      Assert.Equal('F', result.Letter);
     }
   }
 }
